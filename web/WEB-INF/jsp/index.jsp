@@ -5,12 +5,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <
+        <link rel="stylesheet" href="../../css/style.css" type="text/css" />
         <title>Welcome to Spring Web MVC project</title>
     </head>   
 
     <body>
-        <p>Olá! Esta é a página de boas-vindas padrão para um projeto Spring Web MVC.</p>
+        <h1>Olá! Esta é a página de boas-vindas padrão para um projeto Spring Web MVC.</h1>
         <p><i>Para exibir uma página de boas-vindas diferente para este projeto, modificar</i>
             <tt>index.jsp</tt> 
             <i>, ou criar sua própria página de boas-vindas, em seguida, 
