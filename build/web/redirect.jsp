@@ -1,9 +1,9 @@
 <%--
-Views should be stored under the WEB-INF folder so that
-they are not accessible except through controller process.
+Visualizações deve ser armazenado na pasta WEB-INF para que
+eles não são acessíveis, excepto através do processo de controlador.
 
-This JSP is here to provide a redirect to the dispatcher
-servlet but should be the only JSP outside of WEB-INF.
+Esta JSP está aqui para fornecer um redirecionamento para o despachante
+servlet, mas deve ser o único fora JSP de WEB-INF.
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <% response.sendRedirect("index.htm"); %>
