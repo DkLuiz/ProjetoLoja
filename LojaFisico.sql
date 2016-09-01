@@ -1,4 +1,4 @@
--- Geração de Modelo físico
+-- GeraÃ§Ã£o de Modelo fÃ­sico
 -- Sql ANSI 2003 - brModelo.
 
 CREATE DATABASE PLOJA;
@@ -49,7 +49,8 @@ NomeProduto VARCHAR(50)
 );
 
 CREATE TABLE Pedido (
-NumeroPedido INT PRIMARY KEY,
+IdPedido INT PRIMARY KEY,
+NumeroPedido INT NOT NULL,
 IdCliente INT,
 DataPedido DATE,
 DataEnvio DATE,
