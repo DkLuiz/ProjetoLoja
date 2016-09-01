@@ -5,8 +5,9 @@ CREATE DATABASE PLOJA;
 
 CREATE TABLE ItensPedido (
 IdProduto INT,
-NumeroPedido INT,
-Quantidade INT
+IdPedido INT,
+Quantidade INT,
+PRIMARY KEY(IdProduto, IdPedido)
 );
 
 CREATE TABLE Cliente (
@@ -74,5 +75,5 @@ FOREIGN KEY(IdCliente) REFERENCES Cliente (IdCliente)
 );
 
 ALTER TABLE ItensPedido ADD CONSTRAINT FK_PRODUTO_IDPRODUTO FOREIGN KEY(IdProduto) REFERENCES Produto (IdProduto);
-ALTER TABLE ItensPedido ADD CONSTRAINT FK_PEDIDO_IDPEDIDO FOREIGN KEY(IdPedido)    REFERENCES Pedido  (IdPedido);
+ALTER TABLE ItensPedido ADD CONSTRAINT FK_PEDIDO_IDPEDIDO FOREIGN KEY(IdPedido)    REFERENCES Pedido (IdPedido);
 ALTER TABLE Preco ADD FOREIGN KEY(IdProduto) REFERENCES Produto (IdProduto);
